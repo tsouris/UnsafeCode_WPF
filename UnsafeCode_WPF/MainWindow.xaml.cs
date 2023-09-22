@@ -14,18 +14,5 @@ namespace UnsafeCode_WPF
         {
             InitializeComponent();
         }
-
-        [DllImport("user32.dll", CharSet = CharSet.Unicode)]
-        public static extern int MessageBox(IntPtr hWnd, string text, string caption, uint type);
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ShowMessageBox();
-        }
-
-        private void ShowMessageBox() 
-        {
-            MessageBox(IntPtr.Zero, "Hello World!", "Message", 0);
-        }
     }
 }
