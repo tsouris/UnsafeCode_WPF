@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel Orientation="Vertical" Width="400" Height="400">
+            <Label Content="Number Guessing Game" HorizontalAlignment="Center" FontSize="24"/>
+            <Button Content="Start Game" Click="StartGame_Click" Width="100" HorizontalAlignment="Center" Margin="0 150 0 0"/>
+        </StackPanel>
     </Grid>
 </Window>
