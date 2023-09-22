@@ -12,7 +12,7 @@ namespace UnsafeCode_WPF
     public partial class MainWindow : Window
     {
         [DllImport("user32.dll", SetLastError = true)]
-        private static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+        private static extern IntPtr FindWindow(string? lpClassName, string lpWindowName);
 
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         private static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, IntPtr lParam);
