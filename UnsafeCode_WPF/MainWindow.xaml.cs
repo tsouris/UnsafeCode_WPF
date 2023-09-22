@@ -23,7 +23,7 @@ namespace UnsafeCode_WPF
             ShowMessageBox();
         }
 
-        private void ShowMessageBox() 
+        private void ShowMessageBox()
         {
             MessageBox(IntPtr.Zero, "Hello World!", "Message", 0);
         }
